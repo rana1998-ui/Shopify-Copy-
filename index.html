@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css"> <!-- Css -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script> <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <!-- jQuery -->
+
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- FontAwesome -->
+
+</head>
+
+<body>
+
+    <header class="w-100">
+
+        <nav class="navbar navbar-expand-lg nav-bg" id="nav-bg">
+
+            <div class="container-fluid">
+
+                <div class="logo ml-4">
+                    <a href="#" class="navbar-brand" id="logo-name"><img src="/Pictures/Logo/Logo.png" class="img-fluid"
+                            alt="Logo" style="width: 150px; height: 70px;"></a>
+                </div>
+
+                <button
+                    class=" navbar-toggler collapsed border-0 justify-content-center mr-4 align-content-center align-items-center"
+                    data-toggle="collapse" data-target="#anyid55">
+                    <span> </span>
+                    <span> </span>
+                    <span> </span>
+
+                </button>
+
+                <div class="collapse navbar-collapse text-center" id="anyid55">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown"><a href="#" class="link nav-link nav-font ml-3 dropdown-toggle"
+                                id="solutionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Solutions</a>
+
+                            <div class="dropdown-menu d-003 mt-2" aria-labelledby="solutionDropdown">
+
+                                <div class=" align-items-start justify-content-center row d-004">
+
+                                    <div id="d-05" class="col-lg-3 col-6">
+
+                                        <div class="dropdown-header"><i class="fa-solid fa-hammer mr-2"
+                                                id="hammer"></i>Start</div>
+
+                                        <div class="dropdown-divider"></div>
+
+                                        <a class="dropdown-item" href="#">Start your business
+                                            <p>Build your brand</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Create your website
+                                            <p>Online store editor</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Customize your store
+                                            <p>Store themes</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Find business apps
+                                            <p>Shopify app store</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Own your site domain
+                                            <p>Domains & hosting</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Explore free business tools
+                                            <p>Tools to run your business</p>
+                                        </a>
+
+                                    </div>
+
+                                    <div id="d-06" class="col-lg-3 col-6">
+
+                                        <div class="dropdown-header"><i class="fa-solid fa-coins mr-2"
+                                                id="sell"></i>Sell</div>
+
+                                        <div class="dropdown-divider"></div>
+
+                                        <a class="dropdown-item" href="#">Sell your products
+                                            <p>Sell online or in person</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Check out customers
+                                            <p>World-class checkout</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Sell online
+                                            <p>Grow your business online</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Sell across channels
+                                            <p>Channels for social & marketplaces</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Sale in person
+                                            <p>Point of Sale (POS)</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Sell globally
+                                            <p>Inertnational sales</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Sell wholesale & direct
+                                            <p>Business-to-business (B2B)</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Accept online payments
+                                            <p>Set up forms of payment</p>
+                                        </a>
+
+                                    </div>
+
+                                    <div id="d-07" class="col-lg-3 col-6">
+
+                                        <div class="dropdown-header"><i class="fa-solid fa-chart-line mr-2"
+                                                id="graph"></i>Market</div>
+
+                                        <div class="dropdown-divider"></div>
+
+                                        <a class="dropdown-item" href="#">Market your business
+                                            <p>Reach & retain customers</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Market across social
+                                            <p>Social media integrations</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Chat with customers
+                                            <p>Shopify Inbox</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Nuture customers
+                                            <p>Shopify Email</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Know your audience
+                                            <p>Gain customer insights</p>
+                                        </a>
+
+                                    </div>
+
+                                    <div id="d-08" class="col-lg-3 col-6">
+
+                                        <div class="dropdown-header"><i class="fa-solid fa-store fa-gradien mr-2"
+                                                id="store"></i>Manage</div>
+
+                                        <div class="dropdown-divider"></div>
+
+                                        <a class="dropdown-item" href="#">Manage your business
+                                            <p>Track sales, orders & analytics</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Ship orders faster
+                                            <p>Shopify shipping solution</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Manage your stock & orders
+                                            <p>Inventory & order management</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Outsource fulfillment & returns
+                                            <p>Shopify Fulfillment Network</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Get paid faster
+                                            <p>Shopify Balance</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Secure business funding
+                                            <p>Shopify Capital</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Automate your business
+                                            <p>Shopify Capital</p>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </li>
+
+                        <li class="nav-item"><a href="#" class="link nav-link nav-font ml-3">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown"><a href="#" class="link nav-link nav-font ml-3 dropdown-toggle"
+                                id="resourcesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Resources</a>
+
+                            <div class="dropdown-menu d-002 mt-2" aria-labelledby="resourcesDropdown">
+
+                                <div class=" align-items-start justify-content-center d-001 row">
+
+                                    <div id="d-04" class="col-lg-3 col-6">
+
+                                        <div class="dropdown-header"><i class="fa-solid fa-info mr-3" id="help"></i>Help
+                                            and Support</div>
+
+                                        <div class="dropdown-divider"></div>
+
+                                        <a class="dropdown-item" href="#">Help & support
+                                            <p>Get 24/7 support</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">How to guides
+                                            <p>Read in-depth business guides</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Business Courses
+                                            <p>Learn from proven experts</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Shopify blog
+                                            <p>Business strategy tips</p>
+                                        </a>
+
+                                    </div>
+
+                                    <div id="d-03" class="col-lg-3 col-6">
+
+                                        <div class="dropdown-header"><i class="fa-solid fa-pencil mr-3"
+                                                id="pencil"></i>Popular topics</div>
+
+                                        <div class="dropdown-divider"></div>
+
+                                        <a class="dropdown-item" href="#">What is Shopify?
+                                            <p>How our commerce platform works</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Shopify Editions
+                                            <p>New, innovative Shopify products</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Founder Stories
+                                            <p>Learn from successful merchants</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Branding
+                                            <p>Build your brand from scratch</p>
+                                        </a>
+
+                                    </div>
+
+                                    <div id="d-02" class="col-lg-3 col-6">
+
+                                        <div class="dropdown-header"></div>
+
+                                        <div class="dropdown-divider"></div>
+
+                                        <a class="dropdown-item" href="#">Marketing
+                                            <p>Build a marketing plan</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Ecommerce SEO
+                                            <p>Improve your search ranking</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Social media strategy
+                                            <p>Turn social into sales</p>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">Business growth
+                                            <p>Scale your business</p>
+                                        </a>
+
+                                    </div>
+
+                                    <div id="d-01" class="col-lg-3 col-6">
+
+                                        <div class="dropdown-header"><i class="fa-solid fa-briefcase mr-3"
+                                                id="bag"></i>Essential tools</div>
+
+                                        <div class="dropdown-divider"></div>
+
+                                        <a class="dropdown-item line-hei" href="#">Business name generator</a>
+
+                                        <a class="dropdown-item line-hei" href="#">Logo maker</a>
+
+                                        <a class="dropdown-item line-hei" href="#">Stock photography</a>
+
+                                        <a class="dropdown-item line-hei" href="#">Business Plan Template</a>
+
+                                        <a class="dropdown-item line-hei" href="#">Link in bio tool</a>
+
+                                        <a class="dropdown-item line-hei" href="#">QR code generator</a>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                    <button type="button" class="btn btn-primary ml-auto" id="btn-1">Log in</button>
+                    <button type="button" class="btn btn-primary ml-2 rounded-pill pr-4 pl-4 mr-4" style="height: 50px"
+                        id="btn-2">Start free trial</button>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div class="container-fluid row" id="padding">
+
+            <div class=" resp-01 col-lg-6">
+
+                <a href="/video1.html" target="_blank" class="btn rounded-pill pr-4 pl-4 mt-5 position-relative"
+                    id="btn-3"><i class="fa-solid fa-play play01"></i> Watch a 2 min
+                    Shopify overview</a>
+                <h1 id="head-1">The global commerce platform</h1>
+                <p id="head-2">Build your business with Shopify to sell online, offline, and everywhere in between.</p>
+
+                <div class="input-group mb-2" id="box-1">
+
+                    <input type="email" class="form-control rounded-pill p-4" placeholder="Enter your email"
+                        id="inpt-1">
+
+                    <div class="input-group-append">
+
+                        <button class="btn rounded-pill" type="submit" id="btn-4">Start free trial</button>
+
+                    </div>
+
+                </div>
+
+                <p id="head-3">Try Shopify free for 3 days, no credit card required. By entering your email, you agree
+                    to
+                    receive marketing emails from Shopify.</p>
+
+            </div>
+
+            <div class=" btm-top col-lg-2 col-3">
+
+                <!-- <div class="animation01">
+                    <p>$</p>
+                </div> -->
+
+                <div class="marquee-wrapper">
+
+                    <div class="marquee-block">
+
+                        <div class="marquee-inner">
+
+                            <span>
+
+                                <div class="marquee-item">
+                                    <img src="/Pictures/Hero images/1.webp" alt="" style="display: block;"
+                                        class="img-fluid">
+                                </div>
+
+                                <div class="marquee-item">
+                                    <img src="/Pictures/Hero images/4.webp" alt="" style="display: block;"
+                                        class="img-fluid">
+                                </div>
+
+                                <div class="marquee-item">
+                                    <img src="/Pictures/Hero images/5.webp" alt="" style="display: block;"
+                                        class="img-fluid">
+                                </div>
+
+                            </span>
+
+                            <span>
+
+                                <div class="marquee-item">
+                                    <img src="/Pictures/Hero images/1.webp" alt="" style="display: block;"
+                                        class="img-fluid">
+                                </div>
+
+                                <div class="marquee-item">
+                                    <img src="/Pictures/Hero images/4.webp" alt="" style="display: block;"
+                                        class="img-fluid">
+                                </div>
+
+                                <div class="marquee-item">
+                                    <img src="/Pictures/Hero images/5.webp" alt="" style="display: block;"
+                                        class="img-fluid">
+                                </div>
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class=" btm-top01 col-lg-2 col-3">
+
+                <div class="marquee-wrapper">
+
+                    <div class="marquee-block">
+
+                        <div class="marquee-inner1">
+
+                            <span class=" bg-success">
+
+                                <div class="marquee-item">
+                                    <img src="/Pictures/Hero images/6.webp" alt="" style="display: block;"
+                                        class="img-fluid">
+                                </div>
+
+                                <div class="marquee-item">
+                                    <img src="/Pictures/Hero images/3.webp" alt="" style="display: block;"
+                                        class="img-fluid">
+                                </div>
+
+                                <div class="marquee-item">
+                                    <img src="/Pictures/Hero images/1.webp" alt="" style="display: block; width: 230px;"
+                                        class="img-fluid">
+                                </div>
+
+                            </span>
+
+                            <span>
+
+                                <div class="marquee-item">
+                                    <img src="/Pictures/Hero images/6.webp" alt="" style="display: block;"
+                                        class="img-fluid">
+                                </div>
+
+                                <div class="marquee-item">
+                                    <img src="/Pictures/Hero images/3.webp" alt="" style="display: block;"
+                                        class="img-fluid">
+                                </div>
+
+                                <div class="marquee-item">
+                                    <img src="/Pictures/Hero images/1.webp" alt="" style="display: block; width: 230px;"
+                                        class="img-fluid">
+                                </div>
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="container-fluid row grad">
+
+        <div id="chartdiv"></div>
+
+        <div class="col-lg-6" id="box-2">
+
+            <h1 id="head-4">Discover why millions of entrepreneurs chose Shopify to build their business — <span
+                    id="head-5">from hello world to IPO.</span></h1>
+
+
+            <div class="col-lg-5 col-5" id="box-3">
+                <p class="head-5">Millions</p>
+                <p class="head-6">of merchants worldwide</p>
+            </div>
+
+            <div class="col-lg-5 col-5" id="box-4">
+                <p class="head-5">170+</p>
+                <p class="head-6">countries represented</p>
+            </div>
+
+            <div class="col-lg-5 col-5" id="box-5">
+                <p class="head-5">10%</p>
+                <p class="head-6">of total US ecommerce</p>
+            </div>
+
+            <div class="col-lg-5 col-5" id="box-6">
+                <sup class="head-7" id="dollar-01">&dollar;</sup>
+                <span class="head-5">444b+</span>
+                <sup class="head-7" id="dollar">USD</sup>
+                <p class="head-6" id="head-006">global economic activity</p>
+            </div>
+
+        </div>
+
+    </div>
+
+     <h5 class=" text-uppercase text-left head-8">Explore the world's largest commerce community</h5>
+
+    <div class="container-fluid row justify-content-center mt-3 p-4">
+
+        <div class="col-lg-2 mt-3 p-4 bg-light shadow ml-5 rounded hover">
+            <img src="/Pictures/Icons/2.svg" alt="icon-01">
+            <h5 class="mt-4">Creators<i class="fa-solid fa-arrow-right arrow-02"></i></h5>
+            <p class="head-6 w-100 mt-2">Turn followers into customers with commerce tools for creators</p>
+        </div>
+
+        <div class="col-lg-2 mt-3 p-4 bg-light shadow ml-5 rounded hover">
+            <img src="/Pictures/Icons/3.svg" alt="icon-02">
+            <h5 class="mt-4">Developers <i class="fa-solid fa-arrow-right arrow-02"></i></h5>
+            <p class="head-6 w-100 mt-2">Build the future of commerce with Shopify's powerful API</p>
+        </div>
+
+        <div class="col-lg-2 mt-3 p-4 bg-light shadow ml-5 rounded hover">
+            <img src="/Pictures/Icons/4.svg" alt="icon-03">
+            <h5 class="mt-4">Partners <i class="fa-solid fa-arrow-right arrow-02"></i></h5>
+            <p class="head-6 w-100 mt-2">Offer your expertise to Shopify merchants all over the world</p>
+        </div>
+
+        <div class="col-lg-2 mt-3 p-4 bg-light shadow ml-5 rounded hover">
+            <img src="/Pictures/Icons/6.svg" alt="icon-04">
+            <h5 class="mt-4">Plus <i class="fa-solid fa-arrow-right arrow-02"></i></h5>
+            <p class="head-6 w-100 mt-2">A commerce solution for growing digital brands.</p>
+        </div>
+
+        <div class="col-lg-2 mt-3 p-4 bg-light shadow ml-5 hover">
+            <img src="/Pictures/Icons/5.svg" alt="icon-05">
+            <h5 class="mt-4">Enterprise <i class="fa-solid fa-arrow-right arrow-02"></i></h5>
+            <p class="head-6 w-100 mt-2">The modern, composable stack for enterprise retail.</p>
+        </div>
+
+    </div>
+
+    <h5 class="text-left head-10 mb-2">BUILD AN ONLINE STORE</h5>
+    <h1 class="text-uppercase mb-4 head-9">Your store, your way</h1>
+
+    <div class="container-fluid row justify-content-center ml-auto mr-auto">
+
+        <div class="col-lg-10 ml-auto mr-auto">
+            <video class="embed-responsive embed-responsive-16by9" autoplay muted loop id="video-1">
+                <source class="embed-responsive-item" src="/Videos/03.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="col-lg-10 ml-auto mr-auto">
+            <video class="embed-responsive embed-responsive-16by9" autoplay muted loop id="video-2">
+                <source class="embed-responsive-item" src="/Videos/07.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="col-lg-10 ml-auto mr-auto">
+            <video class="embed-responsive embed-responsive-16by9" autoplay muted loop id="video-3">
+                <source class="embed-responsive-item" src="/Videos/06.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="col-lg-3 mt-2 p-3 border-01" id="container-01">
+            <h5 class="head-11">Build an online storefront</h5>
+            <p class="mt-4 head-11 head-011">Bring your vision to life with our drag-and-drop store creator. No coding expertise
+                required
+                — just your next big idea</p>
+            <a href="#" class="link-02">Online Store Builder</a>
+        </div>
+
+
+        <div class="col-lg-3 mt-2 p-3 border-01" id="container-02">
+            <h5 class="head-11">Craft the brand you want</h5>
+            <p class="mt-4 head-11 head-011">Select from customizable templates created by a community of world-class designers.
+            </p>
+            <a href="#" class="link-02">Theme Store</a>
+        </div>
+
+
+        <div class="col-lg-3 mt-2 p-3 border-01" id="container-03">
+            <h5 class="head-11">Level up with apps</h5>
+            <p class="mt-4 head-11 head-011">Add more features and functionality to your online store with apps built by trusted
+                Shopify
+                developers.</p>
+            <a href="#" class="link-02">Shopify App Store</a>
+        </div>
+
+    </div>
+
+    <h5 class="head-10">SALES CHANNELS</h5>
+
+    <div class="container-fluid row justify-content-between mr-auto ml-auto">
+
+        <div class="col-lg-6 mt-4">
+            <h1 class="head-12">Sell to every buyer, everywhere</h1>
+        </div>
+
+        <div class="col-lg-4 mt-5">
+
+            <p class="head-11 text-justify mr-3 mb-4">Sell online, in person, and around the world with the marketing
+                tools,
+                social integrations, and sales
+                channels you need to get your products in front of customers.</p>
+
+            <a href="#" id="link-03">Start selling <i class="fa-solid fa-arrow-right"></i></a>
+
+        </div>
+
+        <div class="col-lg-3 mt-5 text-center margin-01 ">
+            <img src="/Pictures/Slider-2/1.webp" class="img-fluid Picture-01" alt="Pic-01">
+        </div>
+
+        <div class="col-lg-3 mt-5 text-center margin-02 ">
+            <img src="/Pictures/Slider-2/2.webp" class="img-fluid Picture-01" alt="Pic-02">
+        </div>
+
+        <div class="col-lg-3 mt-5 text-center margin-03 ">
+            <img src="/Pictures/Slider-2/3.webp" class="img-fluid Picture-01" alt="Pic-03">
+        </div>
+
+    </div>
+
+    <!--<div class="container-fluid row p-4">
+
+        <div class="col-lg-6 p-4 vid-01">
+            <video class="embed-responsive embed-responsive-16by9 video-play" autoplay loop id="myVideo02">
+                <source src="/Videos/02.mp4" type="video/mp4">
+            </video>
+
+            <div class="buttons-03">
+                <button class="btn first-02 click-03" onclick="playVid02()" type="button">
+                    <i class="fa-solid fa-play"></i></button>
+
+                <button class="btn second-02 click-03" onclick="pauseVid02()" type="button" id="scnd-btn">
+                    <i class="fa-solid fa-pause"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4 margin-04">
+
+            <h5 class="head-main">FAST, RELIABLE CHECKOUT</h5>
+            <p class="para-1">The best-converting checkout on the planet</p>
+            <p class="para-2">Back your business with Shop Pay—the one-click checkout that's built to convert.</p>
+            <a href="#" class="link-04">Seize every sale <i class="fa-solid fa-arrow-right"></i></a>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid row p-4">
+
+        <div class="col-lg-4 margin-06">
+
+            <h5 class="head-main">POINT OF SALE</h5>
+            <p class="para-1">Flexible point of sale to power your retail store</p>
+            <p class="para-2">A POS system that allows customers to shop their way, from online to checkout line.</p>
+            <a href="#" class="link-04">Meet Shopify POS <i class="fa-solid fa-arrow-right"></i></a>
+
+        </div>
+
+        <div class="col-lg-6 margin-07">
+
+            <img src="/Pictures/Hero images/img-01.webp" class="img-fluid" alt="Pic-04">
+
+        </div>
+
+    </div>
+
+    <h5 class="head-sub">BUILT-IN MARKETING TOOLS</h5>
+    <h1 class="heading-main01">From first touch to full funnel</h1>
+    <a href="#" class="link-05">Leverage our full marketing suite <i class="fa-solid fa-arrow-right arrow-01"></i></a>
+
+    <div class="container-fluid row">
+
+        <div class="col-lg-5 section-01 p-4">
+
+            <div class="border-bot" id="box-One">
+                <img src="/Pictures/Icons/4.svg" alt="" class="image-inline">
+                <h3 class="head-inline">Reach new leads</h3>
+                <p class="para-02">Find new shoppers with the SEO, social media, and content marketing tools that help
+                    you
+                    reach customers
+                    where they are.</p>
+            </div>
+
+            <div class="border-bot" id="box-Two">
+                <img src="/Pictures/Icons/3.svg" alt="" class="image-inline">
+                <h3 class="head-inline mt-5">Engage with customers</h3>
+                <p class="para-02">Build custom email campaigns, set automations to serve every segment, and connect
+                    with
+                    customers on the go with integrated messaging tools.</p>
+            </div>
+
+            <div class="border-bot" id="box-Three">
+                <img src="/Pictures/Icons/5.svg" alt="" class="image-inline">
+                <h3 class="head-inline mt-5">Data you can build</h3>
+                <p class="para-02">Take control of your customer data to build custom audiences and explore the customer
+                    insights that drive ongoing growth.</p>
+            </div>
+
+        </div>
+
+        <div class="col-lg-5 p-4" id="myVideo01">
+            <video class="embed-responsive embed-responsive-16by9" autoplay loop id="videPlay1">
+                <source src="/Videos/05.mp4" type="video/mp4">
+            </video>
+
+            <div class="buttons-01">
+                <button class="btn first-01 click-02" onclick="playVid01()" type="button">
+                    <i class="fa-solid fa-play"></i></button>
+
+                <button class="btn second-01 click-02" onclick="pauseVid01()" type="button" id="scnd-btn">
+                    <i class="fa-solid fa-pause"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-5 p-4" id="myVideo04">
+            <video class="embed-responsive embed-responsive-16by9" autoplay loop id="videPlay2">
+                <source src="/Videos/08 (video-converter.com).mp4" type="video/mp4">
+            </video>
+
+            <div class="buttons-02">
+                <button class="btn first-03 click-04" onclick="playVid03()" type="button">
+                    <i class="fa-solid fa-play"></i></button>
+
+                <button class="btn second-03 click-04" onclick="pauseVid03()" type="button" id="scnd-btn">
+                    <i class="fa-solid fa-pause"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-5 p-4" id="myVideo03">
+            <video class="embed-responsive embed-responsive-16by9" autoplay loop id="videPlay3">
+                <source src="/Videos/09.mp4" type="video/mp4">
+            </video>
+
+            <div class="buttons-04">
+                <button class="btn first-04 click-05" onclick="playVid04()" type="button">
+                    <i class="fa-solid fa-play"></i></button>
+
+                <button class="btn second-04 click-05" onclick="pauseVid04()" type="button" id="scnd-btn">
+                    <i class="fa-solid fa-pause"></i></button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <h5 class="head-sub">CENTRALIZED BUSINESS OPERATIONS</h5>
+    <h1 class="heading-main01">Streamline your back office</h1>
+    <a href="#" class="link-06">Manage your business <i class="fa-solid fa-arrow-right arrow-01"></i></a>
+
+    <div class="container-fluid row">
+
+        <div class="col-lg-5 p-4" id="videoSec">
+            <video class="embed-responsive embed-responsive-16by9" id="myVideo" loop autoplay>
+                <source src="/Videos/01.mp4" type="video/mp4">
+            </video>
+
+            <div class="buttons">
+                <button class="btn first click-01" onclick="playVid()" type="button">
+                    <i class="fa-solid fa-play"></i></button>
+
+                <button class="btn second click-01" onclick="pauseVid()" type="button" id="scnd-btn">
+                    <i class="fa-solid fa-pause"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-5 p-4" id="imageSec01">
+            <img src="/Pictures/Slider images/01.webp" alt="">
+        </div>
+
+        <div class="col-lg-5 p-4" id="imageSec02">
+            <img src="/Pictures/Slider images/02.webp" alt="">
+        </div>
+
+        <div class="col-lg-5 section-02 p-4">
+
+            <div class="border-bot" id="boxClick">
+                <img src="/Pictures/Icons/2.svg" alt="" class="image-inline">
+                <h3 class="head-inline">Oversee your operations</h3>
+                <p class="para-02">Manage inventory, track payments, and view real-time business insights — all in one
+                    place, so you can focus on building your business.</p>
+            </div>
+
+            <div class="border-bot" id="boxClick1">
+                <img src="/Pictures/Icons/4.svg" alt="" class="image-inline">
+                <h3 class="head-inline mt-5">Manage your money</h3>
+                <p class="para-02">Manage your business finances all from one place with money management and flexible
+                    funding designed with entrepreneurs in mind.</p>
+            </div>
+
+            <div class="border-bot" id="boxClick2">
+                <img src="/Pictures/Icons/6.svg" alt="" class="image-inline">
+                <h3 class="head-inline mt-5">Fulfill every order</h3>
+                <p class="para-02">Get your products where they need to be with integrated inventory management,
+                    streamlined returns, and a dedicated shipping and fulfillment network.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="animate p-3">
+
+        <marquee behavior="scroll" direction="right" infinite scrollamount="12">
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+            <span class="font-01">START YOUR FREE TRIAL <i class="fa-solid fa-arrow-right ml-4 mt-3"></i></span>
+        </marquee>
+
+
+
+    </div>
+    <br> -->
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
